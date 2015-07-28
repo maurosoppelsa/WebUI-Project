@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="js/jquery.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+  <div class="container">
+    <form class="forms" id="form_login" role="form">
+      <h3 id="login_title">Log In</h3>
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="User">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="pwd" placeholder="Password">
+      </div>
+      <button id="login_bt" type="submit" class="btn btn-default">Submit</button>
+    <a href="#" id="reg_user">or you can register here</a>
+    <p id="invalid_login">User or Pasword incorrect, please try again</p>
+    </form>
+  </div>
+
+  <div class="container">
+    <form class="forms" id="form_register" role="form">
+      <div class="form-group">
+        <label for="name">Create a user name:</label>
+        <input id="new_user" type="text" class="form-control" placeholder="User">
+      </div>
+      <div class="form-group">
+        <label for="pass">Password:</label>
+        <input type="password" class="form-control" id="new_pass" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="new_pass">Retype your Password:</label>
+        <input type="password" class="form-control" id="ret_pwd" placeholder="Password">
+      </div>
+      <div class="form-group">
+      <label>Select the type of user:</label>
+      <select  id="user_options" class="form-control">
+      <option value="User">User</option>
+      <option value="Admin">Admin</option>
+      </select>
+      </div>
+      <button id="register_bt" type="submit" class="btn btn-default">Submit</button>
+      <p id="invalid_data"></p>
+
+    </form>
+  </div>
+<img id="joker" src="images/joker.png">
+<script src="js/slider_effects.js"></script>
+<script src="js/register.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,308 @@
-#menu_tab .dropdown-menu{
+#menu_bar{
+  background-color:#FF4800;
+  position: fixed;
+  z-index: 1000;
+}
+
+#menu_bar a:hover{
+  background-color: #B01000;
+}
+
+#menu_bar a:visited{
+  background-color: #B01000;
+}
+
+#menu_bar .dropdown-menu{
 margin-left: 42%;
 min-width: 70%;
 }
 
-#menu_tab .dropdown-menu  li  a {
-  line-height: 3.429;
+#menu_bar .dropdown-menu  li  a {
+  line-height: 2.429;
+}
+
+#menu_bar a {
+  color: #ffffff;
+}
+#menu_bar .dropdown-menu{
+  background-color: #FF4800;
+}
+#slider_home{
+      background-repeat: no-repeat;
+      height: 500px;
+      width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      text-align: center;
+}
+#slider_content{
+
+  height: 500px;
+  width: 100%;
+}
+#title_sld1{
+color: #ffffff;
+}
+#text_sld1{
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+}
+#banner1{
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 8%;
+}
+#bn1_bt{
+  margin-top: 4%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+#banner2{
+  color: #ffffff;
+  float: left;
+  margin-left: 1%;
+  background-color: #000000;
+  padding: 15px;
+  opacity: 0.5;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+#banner2 a{
+  color: #ffffff;
+}
+
+#banner3{
+float: right;
+color: #76F2AC;
+margin-right: 9%;
+margin-top: 6%;
+width: 320px;
+
+}
+#sec_ic{
+  margin-left: 10px;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+.site-footer {
+  background: #000000;
+  text-align: center;
+  clear: both;
+}
+.footer_content{
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.social_img{
+  padding: 2px;
+}
+
+#account_bar{
+  color: #000000 !important;
+}
+
+#account_bar:hover{
+background-color: #FF4800 !important;
+}
+#account_bar:visited{
+background-color: #FF4800 !important;
+}
+#sidebar{
+  width: 200px;
+  height: 265px;
+  background-color: #FF4800;
+  float: left;
+  margin-bottom: 5%;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+#content_sidebar{
+margin-left: 10px;
+}
+#content_sidebar img{
+  margin-top: 10px;
+  width: 70px;
+  height: auto;
+  margin-left: 10%;
+}
+
+#box_infosb{
+margin-top: 10px;
+}
+
+#box_infosb a{
+  color: #ffffff;
+}
+#magazine_list{
+text-align: center;
+}
+ #magazine_list img{
+  width: 120px;
+  height: 150px;
+  margin-bottom: 12px;
+  margin-left: 19%;
+}
+
+#magazine_list .row{
+  height: 300px;
+}
+.mag_content{
+  border: 2px solid #ff853d;
+  height: 270px;
+  padding: 10px;
+  width: 220px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.mag_content a{
+  color: #62a9e6;
+  display: block;
+  clear: both;
+}
+.mag_content img{
+  display: block;
+}
+.mag_content span{
+display: block;
+float: left;
+margin-bottom: 5px;
+}
+
+/*.mag_content:hover{
+opacity: 0.5;
+transition: opacity 1s;
+cursor: pointer;
+}*/
+body{
+  background-color: #F6F4DD !important;
+}
+#text_foot1{
+margin-top: 13px;
+}
+#name{
+width: 20%;
+}
+#pwd{
+width: 20%;
+}
+
+.forms{
+  position:fixed;
+    top:31%;
+    left:36%;
+    width:100%;
+}
+
+#new_name{
+width: 20%;
+}
+#new_pass{
+width: 20%;
+}
+#new_user{
+width: 20%;
+}
+#ret_pwd{
+  width: 20%;;
+}
+#joker{
+  margin-left: 43%;
+  height: 100%;
+}
+#login_title{
+  color: #FF4800;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+#invalid_login{
+  margin-top: 10px;
+  color: red;
+}
+#invalid_data{
+  margin-top: 10px;
+  color: red;
+}
+#user_options{
+width: 100px;
+}
+#admin_panel{
+  display: none;
+}
+#divider_profile{
+  display: none;
+}
+#banner4{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 3%;
+  color: #76f2ac;
+}
+.bn4_bt{
+  margin-top: 13px;
+  background-color: transparent !important;
+  border: 1px solid #76F2AC !important;
+  color: #76F2AC !important;
+  margin-right: 10px;
+  margin-top: 13px;
+}
+#title_comics{
+  color: #ff4800;
+  font-weight: bold;
+  margin-left: 45%;
+  margin-top: -6%;
+  position: absolute;
+}
+#sitemap{
+margin-bottom: 2px;
+}
+#logo{
+position: fixed;
+left:15px;
+top: 2px;
+width: 6%;
+z-index: 1;
+}
+#prueba{
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+}
+.sp_mag{
+
+}
+.filters{
+  cursor: pointer;
+}
+
+.data_box{
+  background-color: #000000;
+  color: #ffffff;
+  width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+  border: 2px solid #FF4800;
 }

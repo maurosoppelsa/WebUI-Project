@@ -1,0 +1,18 @@
+@media only screen and (min-width: 700px) (max-width: 1024px) {
+    #magazine_list .row {
+    heigth: 230px !important;
+    margin-top:10px !important;
+    }
+    #magazine_list img{
+    width: 100px !important;
+    heigth: auto !important;
+    margin-bottom:5px !important ;
+    }
+    .mag_content{
+    heigth:220px !important;
+    width:125px !important;
+    }
+    .row {
+    margin-left:15px !important;
+    }
+}

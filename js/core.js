@@ -3,6 +3,7 @@ $(document).ready(function () {
 
         /*main style file*/
         $('head').append('<link rel="stylesheet" href="css/style.css" type="text/css" />');
+        $('head').append('<link rel="stylesheet" href="css/responsive.css" type="text/css" />');
         /*jquery libraries*/
         $('head').append('<link rel="stylesheet" href="js/jquery-ui-1.11.4/jquery-ui.css" />');
         $('head').append('<link rel="stylesheet" href="js/jquery-ui-1.11.4/jquery-ui.structure.css" />');
@@ -14,5 +15,9 @@ $(document).ready(function () {
         $('head').append('<script src="bootstrap/js/bootstrap.min.js"></script>');
         /*effects files*/
         $('head').append('<script src="js/button_effects.js"></script>');
-        $('head').append('<script src="js/img_effects.js"></script>');
+        $('head').append('<script src="js/slider_effects.js"></script>');
+        $('head').append('<script src="js/register.js"></script>');
+        $('head').append('<script src="js/account.js"></script>');
+        $('head').append('<script src="js/comics.js"></script>');
+        $('head').append('<script src="js/addComics.js"></script>');
 });

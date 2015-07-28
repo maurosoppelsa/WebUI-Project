@@ -1,23 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home</title>
+<meta charset="utf-8">
 <script src="js/jquery.js"></script>
-<script src="js/core.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<title>Home</title>
 </head>
 <body>
-<ul id="menu_tab" class="nav nav-tabs nav-justified">
-  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">User Login</a></li>
-                        <li><a href="#">Dropdown Link 2</a></li>
-                        <li><a href="#">Dropdown Link 3</a></li></ul>
-     <li><a href="#">Genres</a></li>
-     <li><a href="#">Editions</a></li>
-     <li><a href="#">news</a></li>
-     <li><a href="#">characters</a></li>
+  <header>
+<ul id="menu_bar" class="nav nav-tabs nav-justified">
+     <li><a href="#"><i class="glyphicon glyphicon-tag"></i> Genres</a></li>
+     <li><a href="#"><i class=" glyphicon glyphicon-leaf"></i> Editions</a></li>
+     <li><a href="#"><i class="glyphicon glyphicon-globe"></i> News</a></li>
+     <li><a href="#"><i class="glyphicon glyphicon-comment"></i> Characters</a></li>
+     <li class="dropdown"><a id="account_bar" href="#" class="dropdown-toggle" data-toggle="dropdown"><i id="icon_user"></i><span id="user_name"></span><b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+                           <li id="logout"><a href="#"><i class="glyphicon glyphicon-arrow-left buttons_icons"></i><span> Logout</span></a></li>
+                           <li id="divider_profile" class="divider"></li>
+                           <li id="admin_panel"><a href="#"><i class="glyphicon glyphicon-cog buttons_icons"></i><span> Admin Panel</span></a></li>
+                           </ul>
  </ul>
+</header>
+<section class="page-wrap">
+<div id="slider_content">
+<div id="black_wraper">
+ <div id="slider_home">
+
+<div id="banner1">
+<h2 id="title_sld1">Class aptent taciti sociosqu ad<h2>
+<p id="text_sld1">Mauris in tellus enim. Etiam eget tortor faucibus elit tempus consectetur a eget ligula. Integer bibendum vulputate varius. Nulla facilisi.</p>
+<button id="bn1_bt" type="button" class="btn btn-default">Subscribe now</button>
+</div>
+<div id="banner2">
+<h3>Vestibulum ante ipsum primis</h3>
+<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
+<i class="glyphicon glyphicon-phone"></i><a  href="#"> Fusce viverra &#174</a>
+</div>
+<div id="banner3">
+<h3>Maecenas non erat quis...</h3>
+<p> torquent per conubia nostra, per inceptos himenaeos.
+  Pellentesque at vehicula dolor, sit amet egestas libero.
+  Integer at quam interdum, ultricies sapien id, vestibulum magna.
+  Mauris mollis posuere venenatis. Etiam lacus eros,
+  pretium eu nunc sed, malesuada rhoncus augue.</p>
+<i class="glyphicon glyphicon-earphone"> (54)5589-515611  </i>
+<i id="sec_ic" class="glyphicon glyphicon-envelope"> sample@sample.com</i>
+</div>
+<div id="banner4">
+<h2>Curabitur mollis fringilla magna sed!!</h2>
+<p>Aliquam sed viverra arcu, non dapibus orci. Pellentesque lacinia auctor gravida.</p>
+  <button id="bn4a_bt" type="button" class="btn btn-default bn4_bt"><i class="glyphicon glyphicon-star"></i> semper</button>
+  <button id="bn4b_bt" type="button" class="btn btn-default bn4_bt"><i class="glyphicon glyphicon-star"></i> mollis</button>
+
+</div>
+
+ </div>
+</div>
+<div>
+</section>
+<aside>
+<div id="sidebar">
+<div id="content_sidebar">
+<h4><i class="glyphicon glyphicon-bookmark"></i> Most Popular</h4>
+<img src="images/zombie.jpg">
+<div id="box_infosb">
+<a id="most_pop" class="filters"><i class="glyphicon glyphicon-pushpin"></i> Most populars comics</a></br>
+<a id="top_bt" class="filters"><i class="glyphicon glyphicon-pushpin"></i> Top 10 best comics</a></br>
+<a id="qual_bt" class="filters"><i class="glyphicon glyphicon-pushpin"></i> Qualifications</a></br>
+<a id="rec_bt" class="filters"><i class="glyphicon glyphicon-pushpin"></i> Recomended</a></br>
+<a href="#"><i class="glyphicon glyphicon-pushpin"></i> Advanced Search</a></br>
+</div>
+</div>
+</div>
+</aside>
+<section id="magazine_list">
+  <div class="container-fluid">
+<div id="rc1" class="row">
 
 
+
+</div>
+
+</div>
+
+</section>
+<footer class="site-footer">
+<div class="footer_content">
+  <div id="sitemap">
+  <a href="#">Genres</a> / <a href="">Editions</a> / <a href="#">News</a> / <a href="#">Characters</a>
+  </div>
+<p>find us:</p>
+<a href="#" ><img  class="social_img" src="images/social-facebook.png"></a>
+<a href="#" ><img  class="social_img" src="images/social-linkedin.png"></a>
+<a href="#" ><img  class="social_img" src="images/social-twitter.png"></a>
+<p id="text_foot1">Amazing comics &#174 - All rigths reserved</p>
+</div>
+</footer>
+<script src="js/slider_effects.js"></script>
+<script src="js/register.js"></script>
+<script src="js/account.js"></script>
+<script src="js/addComics.js"></script>
+<script src="js/comics.js"></script>
 </body>
 </html>
