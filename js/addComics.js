@@ -123,56 +123,38 @@ for (var i=1;i<=10;i++){
 
 function loadComics(){
 
-  var comic1 = {id:"1",name:"Donec nec justo",edition:"lacus",url: "images/magazines/mag1.jpg",qualification:"1",recomended:""};
-
- localStorage.setItem("comic1",JSON.stringify(comic1));
-
-  var comic2 = {id:"2",name:"Vivamus nisl du",edition:"dui",url:"images/magazines/mag2.jpg",qualification:"",recomended:"3"};
-
-   localStorage.setItem("comic2",JSON.stringify(comic2));
-
-   var comic3 = {id:"3",name:"Lacinia pellentesque",edition:"dui",url:"images/magazines/mag3.jpg",qualification:"5",recomended:""};
-
-   localStorage.setItem("comic3",JSON.stringify(comic3));
-
-   var comic4 = {id:"4",name:"Adipiscing ",edition:"lorem",url:"images/magazines/mag4.jpg",qualification:"2",recomended:"2"};
-
-     localStorage.setItem("comic4",JSON.stringify(comic4));
-
-   var comic5 = {id:"5",name:"Vestibulum pulvinar",edition:"Proin",url:"images/magazines/mag5.jpg",qualification:"",recomended:"1"};
-
-     localStorage.setItem("comic5",JSON.stringify(comic5));
-
-   var comic6 = {id:"6",name:"Lorem sollicitudin",edition:"tristique",url:"images/magazines/mag6.jpg",qualification:"4",recomended:""};
-
-     localStorage.setItem("comic6",JSON.stringify(comic6));
-
-   var comic7 = {id:"7",name:"Proin",edition:"commodo",url:"images/magazines/mag7.jpg",qualification:"",recomended:""}
-
-     localStorage.setItem("comic7",JSON.stringify(comic7));
-
-   var comic8 = {id:"8",name:"Quisque arcu",edition:"interdum",url:"images/magazines/mag8.jpg",qualification:"",recomended:"1"};
-
-     localStorage.setItem("comic8",JSON.stringify(comic8));
-
-   var comic9 = {id:"9",name:"Class aptent taciti",edition:"Mauris",url:"images/magazines/mag9.jpg",qualification:"",recomended:"2"};
-
-     localStorage.setItem("comic9",JSON.stringify(comic9));
-
-   var comic10 = {id:"10",name:"Proin malesuada",edition:"sem",url:"images/magazines/mag10.jpg",qualification:"",recomended:""};
-
-     localStorage.setItem("comic10",JSON.stringify(comic10));
+  var comic = [
+{id:"1",name:"Donec nec justo",edition:"lacus",url: "images/magazines/mag1.jpg",qualification:"1",recomended:""},
+{id:"2",name:"Vivamus nisl du",edition:"dui",url:"images/magazines/mag2.jpg",qualification:"",recomended:"3"},
+{id:"3",name:"Lacinia pellentesque",edition:"dui",url:"images/magazines/mag3.jpg",qualification:"5",recomended:""},
+{id:"4",name:"Adipiscing ",edition:"lorem",url:"images/magazines/mag4.jpg",qualification:"2",recomended:"2"},
+{id:"5",name:"Vestibulum pulvinar",edition:"Proin",url:"images/magazines/mag5.jpg",qualification:"",recomended:"1"},
+{id:"6",name:"Lorem sollicitudin",edition:"tristique",url:"images/magazines/mag6.jpg",qualification:"4",recomended:""},
+{id:"7",name:"Proin",edition:"commodo",url:"images/magazines/mag7.jpg",qualification:"",recomended:""},
+{id:"8",name:"Quisque arcu",edition:"interdum",url:"images/magazines/mag8.jpg",qualification:"",recomended:"1"},
+{id:"9",name:"Class aptent taciti",edition:"Mauris",url:"images/magazines/mag9.jpg",qualification:"",recomended:"2"},
+{id:"10",name:"Proin malesuada",edition:"sem",url:"images/magazines/mag10.jpg",qualification:"",recomended:""}
+];
+localStorage.setItem("comic",JSON.stringify(comic));
 }
 
 function showComics(){
 
-  for (var i=1;i<=10;i++){
+var the_comic = [];
+the_comic = localStorage.getItem('comic');
+console.log("valor de the_comic: " + the_comic);
 
-  the_comic = localStorage.getItem(("comic")+i);
+ comic_obj = JSON.parse(the_comic);
 
-  comic_obj = JSON.parse(the_comic);
+  for (var i=0;i<10;i++){
 
-  $('#rc1').append('<div id="'+mag+i+'" class="col-md-2 magazines"><div class="mag_content"><img src="'+comic_obj.url+'"><span><b>Name:</b> "'+comic_obj.name+'"</span><span><b>Edition: </b>"'+comic_obj.edition+'"</span><a id="'+recomend+i+'" href="#">Recomend</a><a id="'+qualifier+i+'" href="#">Qualification</a></div></div>');
+
+
+
+
+  console.log('valor de objeto ' + comic_obj[i].name );
+
+  $('#rc1').append('<div id="'+mag+i+'" class="col-md-2 magazines"><div class="mag_content"><img src="'+comic_obj[i].url+'"><span><b>Name:</b> "'+comic_obj[i].name+'"</span><span><b>Edition: </b>"'+comic_obj[i].edition+'"</span><a id="'+recomend+i+'" href="#">Recomend</a><a id="'+qualifier+i+'" href="#">Qualification</a></div></div>');
 
   }
 
